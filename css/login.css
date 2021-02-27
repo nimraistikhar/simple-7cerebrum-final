@@ -1,0 +1,153 @@
+:root {
+    --input-bc-color: #fff;
+    --fas-color: #000;
+    --input-submit-color: #fff;
+    --input-submit-bc-color: #110f08;
+    --button-goolge-color: #000; 
+    --button-border-color: #000;
+    --border-color: #cccccc9a;
+    --detail-a-color: #0a0f0f;
+    --detail-a-hover-color: #131818e1;
+    --button-hover-bc-color: #131818;
+    --button-hover-color: #fff;
+    --input-focus-color: #13181870;
+}
+
+[data-theme=dark] {
+    --input-bc-color: #000;
+    --fas-color: #fff;
+    --input-submit-color: #000;
+    --input-submit-bc-color: #fff;
+    --button-goolge-color: #fff;
+    --button-border-color: #fff;
+    --border-color: #242323;
+    --detail-a-color: #fff;
+    --detail-a-hover-color: #ffffffb4;
+    --button-hover-bc-color: #faf8f8e8;
+    --button-hover-color: #000;
+    --input-focus-color: #ffffff6b;
+}
+
+/***********   LOGIN   ***********/
+
+.login {
+    height: 95vh;
+    position: relative;
+} 
+
+/***********   HEADING   ***********/
+
+h3 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.container {
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    width: 30%;
+    padding: 1.5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/***********   FORM   ***********/
+ 
+form {
+    margin: 0 auto;
+}
+
+label {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: gray;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px 12px 12px;
+  margin: 10px 0;
+  display: inline-block;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #5e5d5d;
+  font-weight: 400;
+  background-color: var(--input-bc-color);
+}
+
+input[type=text] {
+    margin-bottom: 15px;
+}
+
+input:focus {
+    border: 1px solid var(--input-focus-color);
+}
+
+/***********   BUTTON   ***********/
+
+button {
+    background-color: transparent;
+    color: var(--button-goolge-color);
+    padding: 10px 20px;
+    margin: 8px 0;
+    border: 1px solid var(--button-border-color);
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+}
+
+button:first-of-type {
+    padding: 14px 20px;
+    background-color: var(--input-submit-bc-color);
+    color: var(--input-submit-color);
+}
+
+button:hover {
+    background-color: var(--button-hover-bc-color);
+    color: var(--button-hover-color);
+}
+
+/***********   LOGIN-DETAIL   ***********/
+
+.detail {
+    display: flex;
+    justify-content: space-between;
+}
+
+.detail a {
+    text-decoration: underline;
+    color: var(--detail-a-color);
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 0 .5rem;
+    transition: color 0.2s ease-in;
+}
+
+.detail a:hover {
+    color: var(--detail-a-hover-color);
+}
+  
+span.psw {
+  padding-top: 16px;
+}
+
+/***********   ICON   ***********/
+
+.fab {
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+.fas {
+    float: right;
+    margin-right: 5px;
+    color: var(--fas-color);
+}
+
+.hide {
+    display: none;
+}

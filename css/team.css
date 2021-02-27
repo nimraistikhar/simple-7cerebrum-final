@@ -1,0 +1,31 @@
+/***********   TEAM   ***********/
+
+.team {
+    height: 95vh;
+    position: relative;
+}
+
+.team-cerebrum {
+    position: absolute;
+    top: 53.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/***********   HEADING   ***********/
+
+h1 {
+    font-size: 3.6rem;
+    font-weight: 700;
+    letter-spacing: .5px;
+}
+
+/***********   PARAGRAPH   ***********/
+
+p {
+    font-size: 1.65rem;
+    font-weight: 500;
+    color: #666565c0;
+    margin-bottom: 3rem;
+}

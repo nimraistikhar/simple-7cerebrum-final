@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <title>7ceberem</title>
+</head>
+<body>
+
+        <!--    ***********   CONTACT   ************     -->
+
+    <div class="contact-page">
+
+        <!--    ***********   NAV   ************     -->
+
+        <nav>
+            <img src="img/logo.b5cb06e3.svg" alt="7Cerebrum" class="nav-logo">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Sign up</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a class="current" href="#">Contact us</a></li>
+                <li><a onclick="changeMode(this)" data-mode="light" href="#">Dark theme &nbsp; <i class="fas fa-moon"></i></a></li>
+            </ul>
+        </nav>
+
+        <!--    ***********   CONTACT-DESCRIPTION   ************     -->
+
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p class="contact-paragraph">Contact us in case you got any query or just hit us up on socials.</p>
+
+        <!--    ********   CONTACT-FORM   *********     -->
+   
+                <form action="/action_page.php">
+                    <div class="contact-bio">
+                        <input type="text" id="fname" name="firstname" placeholder="Full Name">
+                        <input type="text" id="email" name="name" placeholder="Email">
+                    </div>
+                    <textarea id="subject" name="subject" placeholder="Message" style="height:120px;"></textarea>
+              
+                  <input type="submit" value="Send Message">
+                </form>
+        </div>
+        
+    </div>
+
+        <!--  *********   FOOTER   **********  -->
+
+    <footer>
+        <ul>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">YouTube</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Discord</a></li>
+        </ul>
+    </footer>
+
+    <!--  *********   include script.js   **********  -->
+
+    <script src="js/script.js"></script>
+    
+</body>
+</html>

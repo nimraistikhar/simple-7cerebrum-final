@@ -1,0 +1,96 @@
+:root {
+  --input-text-bc-color: #fff;
+  --border-color: #cccccc9a;
+  --submit-bc-color: #fff;
+  --submit-color: #404040;
+  --submit-border-color: #3c3c3cb0;
+}
+
+[data-theme=dark] {
+  --input-text-bc-color: #000;
+  --border-color: #242323;
+  --submit-bc-color: #000;
+  --submit-color: #fff;
+  --submit-border-color: #fff;
+}
+
+/***********   CONTACT   ***********/
+
+body {
+    width: 100%;
+}
+
+.contact-page {
+    height: 95vh;
+    position: relative;
+}
+
+/***********   HEADING   ***********/
+
+h1 {
+    font-size: 3.9rem;
+    letter-spacing: -1px;
+}
+
+/***********  PARAGRAPH  ***********/
+
+p {
+    font-size: 1.7rem;
+    color: #808080ad;
+}
+
+/*----------------------------------*/
+       /* CONTACT FORM */
+/*----------------------------------*/
+
+input[type=text]:not(:last-of-type) {
+    margin-right: .5rem;
+}
+
+input[type=text]:last-of-type {
+  margin-left: .5rem;
+}
+
+input[type=text], textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  margin-top: -1rem;
+  margin-bottom: 2rem;
+  background-color: var(--input-text-bc-color);
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: var(--submit-bc-color);
+  color: var(--submit-color);
+  font-size: 1.65rem;
+  padding: 9px 16px;
+  border: 2px solid var(--submit-border-color);
+  border-radius: 5px;
+  font-weight: 500;
+  letter-spacing: -.5px;
+  cursor: pointer;
+  transition: hover 0.2s ease-in-out;
+}
+
+input[type=submit]:hover {
+  background-color: #101414;
+  border: 2px solid #171717;
+  color: #fff;
+}
+
+.container {
+  border-radius: 5px;
+  width: 50%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.contact-bio {
+    display: flex;
+}

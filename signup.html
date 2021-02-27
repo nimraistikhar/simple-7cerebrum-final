@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/signup.css">
+    <title>7ceberem</title>
+</head>
+<body>
+
+        <!--    ***********   SIGNUP   ************     -->
+
+    <div class="signup">
+
+        <!--    ***********   NAV   ************     -->
+
+        <nav>
+            <img src="img/logo.b5cb06e3.svg" alt="7Cerebrum" class="nav-logo">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a class="current" href="#">Sign up</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+                <li><a onclick="changeMode(this)" data-mode="light" href="#">Dark theme &nbsp; <i class="fas fa-moon"></i></a></li>
+            </ul>
+        </nav>
+
+        <!--    ***********   SIGNUP-FORM   ************     -->
+
+        <div class="container">
+
+        <h3>Create a new Account</h3>
+            <form action="action_page.php" method="post">
+                 
+                  <label for="uname"><b>Full Name</b></label>
+                  <input type="text" placeholder="Full Name" name="uname" required>
+
+                  <label>Email</label>
+                  <input type="text" placeholder="Email" name="email" required>
+            
+                  <label>Password</label>
+                  <i class="show fas fa-eye"></i>
+                  <i class="hide fas fa-eye-slash"></i>
+                  <input type="password" placeholder="Password" name="psw" class="password" required>
+
+                  <p>By signing up, you agree with our <span><a href="#">privacy policy</a></span> and <span><a href="#">terms of use.</a></span></p>
+            
+                  <button type="submit">Login</button>
+                  <button type="submit"><i class="fab fa-google"></i> Sign in with Google</button>
+            
+                <div class="detail">
+                  <span class="psw"><a href="#">I don't have an Account</a></span>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+        <!--  *********   FOOTER   **********  -->
+
+    <footer>
+        <ul>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">YouTube</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Discord</a></li>
+        </ul>
+    </footer>
+
+        <!--  *********   JAVASCRIPT   **********  -->
+
+    <script text="text/javascript">
+
+        var passwordField = document.querySelector('.password')
+        var show = document.querySelector('.show')
+        var hide = document.querySelector('.hide')
+
+        show.onclick = function() {
+            passwordField.setAttribute("type", "text")
+            show.style.display = "none";
+            hide.style.display = "block";
+        }
+
+        hide.onclick = function() {
+            passwordField.setAttribute("type", "password")
+            hide.style.display = "none";
+            show.style.display = "block";
+        }
+
+    </script>
+
+    <!--  *********   include script.js   **********  -->
+
+    <script src="js/script.js"></script>
+    
+</body>
+</html>

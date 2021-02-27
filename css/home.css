@@ -1,0 +1,197 @@
+:root {
+    --body-color: #fff;
+    --nav-a-hover-color: #101414af;
+    --h1-color: #110f08;
+    --btn-art-color: #fff;
+    --btn-art-bc-color: #000;
+    --btn-sub-bc-color: #3c3c3cef;
+    --btn-sub-border-color: #3c3c3cb0;
+    --footer-hover-color: #101414cb;
+    --current-color: #343434;
+}
+
+[data-theme=dark] {
+    --body-color: #000;
+    --nav-a-hover-color: #fff;
+    --h1-color: #fff;
+    --btn-art-color: #000;
+    --btn-art-bc-color: #fff;
+    --btn-sub-bc-color: #fff;
+    --btn-sub-border-color: #fff;
+    --footer-hover-color: #fff;
+    --current-color: #fff;
+}
+
+/*----------------------------------*/
+            /* BASIC SETUP */
+/*----------------------------------*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    color: var(--h1-color);
+    position: relative;
+    background-color: var(--body-color);
+}
+
+.home {
+    height: 95vh;
+}
+
+
+/***********   NAV   ***********/
+
+nav{
+    max-width: 88%;
+    margin: 0 auto;
+    padding: 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-logo {
+    height: 50px;
+    width: auto;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0 1.3rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    /* color: var(--font-color); */
+    color: #9c9c9c;
+    font-size: 1.55rem;
+    font-weight: 600;
+}
+
+nav ul li a:hover {
+    color: var(--nav-a-hover-color);
+}
+
+/***********   ICON   ***********/
+
+.fas {
+    color: #0a0f0f;
+    font-size: 1.8rem;
+}
+
+/*----------------------------------*/
+       /* HOME DESCRIPTION */
+/*----------------------------------*/
+
+.home-cerebrum {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-top: -1rem;
+}
+
+/***********   HEADING   ***********/
+
+h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    letter-spacing: .5px;
+}
+
+/***********  PARAGRAPH  ***********/
+
+p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #949494;
+    margin-bottom: 1rem;
+    color: #2a2a2a;
+}
+
+/***********   BUTTON   ***********/
+
+.btn__submit a {
+    margin: .8rem;
+    font-size: 1.55rem;
+    text-decoration: none;
+    padding: 1rem 3.3rem;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: 0.2s ease-in-out;
+}
+
+.btn__submit a:hover {
+    background-color: #101414;
+    border: 1px solid #171717;
+    color: #fff;
+}
+
+.btn__submit-art {
+    color: var(--btn-art-color);
+    background-color: var(--btn-art-bc-color);
+    border: 1px solid var(--btn-art-bc-color);
+}
+
+.btn__submit-music {
+    color: var(--btn-sub-bc-color);
+    border: 2px solid var(--btn-sub-border-color);
+}
+
+/***********   FOOTER   ***********/
+
+footer {
+    margin-top: -2rem;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+footer ul li {
+    font-size: 1.51rem;
+    font-weight: 600;
+    padding: 1.5rem 1.5rem;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #8a8888;
+    transition: 0.2s linear;
+}
+
+footer ul li a:hover {
+    color: var(--footer-hover-color);
+}
+
+/***********   CURRENT   ***********/
+
+.current {
+    color: var(--current-color);
+}
+
+/***********  MOON   ***********/
+
+.moon {
+    font-size: 2rem;
+    color: #000;
+}
